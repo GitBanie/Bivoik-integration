@@ -9032,7 +9032,9 @@ html {
 }
 
 body {
-	display: flexbox;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 }
 
 /*# sourceMappingURL=app.css.map */
