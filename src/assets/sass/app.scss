@@ -1,12 +1,16 @@
-
+//Bootstrap
 @import 'node_modules/bootstrap/scss/bootstrap';
 
+//variables
+@import 'variables';
 
-html{
-  color:blue;
-  background-color: white;
-}
+//font
+@import 'fonts';
 
 body{
   display: flex;
+}
+
+h1{
+  font-family: $font-main;
 }

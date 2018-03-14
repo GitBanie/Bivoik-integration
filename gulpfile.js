@@ -5,7 +5,6 @@ var gulp = require('gulp'),
   postcss = require('gulp-postcss'),
   sass = require('gulp-sass'),
   sourcemaps = require('gulp-sourcemaps'),
-  jshint = require('gulp-jshint'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
   imagemin = require('gulp-imagemin'),
@@ -36,9 +35,12 @@ gulp.task('css', function() {
 
 // JavaScript
 gulp.task('javascript', function() {
-  return gulp.src([source + '/assets/js/*.js'])
-    .pipe(jshint())
-    .pipe(jshint.reporter('fail'))
+  return gulp.src([
+      'node_modules/jquery/dist/jquery.js',
+      'node_modules/bootstrap/dist/js/bootstrap.js',
+       source + '/assets/js/fontawesome-all.min.js',
+       source + '/assets/js/app.js'
+    ])
     .pipe(concat('app.js'))
     .pipe(uglify())
     .pipe(gulp.dest(destination + '/js/'));
