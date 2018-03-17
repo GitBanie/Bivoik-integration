@@ -22,6 +22,7 @@ gulp.task('css', function() {
   return gulp.src(source + '/assets/sass/app.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({
+      // outputStyle: 'compressed',
       outputStyle: 'expanded',
       indentType: 'tab',
       indentWidth: '1'
@@ -37,7 +38,7 @@ gulp.task('css', function() {
 gulp.task('javascript', function() {
   return gulp.src([
       'node_modules/jquery/dist/jquery.js',
-      'node_modules/bootstrap/dist/js/bootstrap.js',
+      'node_modules/bootstrap/dist/js/bootstrap.bundle.js',
        source + '/assets/js/fontawesome-all.min.js',
        source + '/assets/js/app.js'
     ])
@@ -63,12 +64,12 @@ gulp.task('watch', function() {
       baseDir: './'
     }
   });
-  gulp.watch([destination + '/css/', source + '/assets/sass/app.scss'], ['css']);
+  gulp.watch([destination + '/css/', source + '/assets/sass/*.scss'], ['css']);
   gulp.watch(source + '/assets/js/*.js', ['javascript']);
   gulp.watch(source + '/assets/img/*.{png,jpg,gif}', ['img']);
   gulp.watch('./*.html').on('change', browserSync.reload);
   //Si on veut watcher le css (faire la meme chose pour le js)
-  // gulp.watch(source + "/assets/sass/app.scss", ['css']).on('change', browserSync.reload);
+  // gulp.watch(source + "/assets/sass/*.scss", ['css']).on('change', browserSync.reload);
 });
 
 

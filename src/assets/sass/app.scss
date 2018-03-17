@@ -1,16 +1,30 @@
 //Bootstrap
 @import 'node_modules/bootstrap/scss/bootstrap';
 
+//flags
+@import 'node_modules/flag-icon-css/sass/flag-icon';
+
 //variables
 @import 'variables';
 
 //font
 @import 'fonts';
 
-body{
-  display: flex;
-}
+//button
+@import 'btn';
 
-h1{
-  font-family: $font-main;
-}
+//inputs
+@import 'input';
+
+//Global
+@import 'global';
+
+//header
+@import 'header';
+
+//Sections
+  // Blog
+  @import 'sections/blog';
+
+//footer
+@import 'footer';

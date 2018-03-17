@@ -1,0 +1,15 @@
+section.blog{
+
+  .blog-img{
+    img{
+      &:last-child{
+        border: solid black 5px;
+        position: relative;
+        // top: -15%;
+        // left: -48%;
+      }
+    }
+
+  }
+
+}
