@@ -11101,6 +11101,10 @@ a.text-dark:hover, a.text-dark:focus {
 	src: url("../fonts/Base02.ttf") format("truetype");
 }
 
+.btn-danger {
+	background-color: #e9511f;
+}
+
 .search input:focus, .search select:focus {
 	-webkit-box-shadow: none;
 	        box-shadow: none;
@@ -11112,31 +11116,75 @@ body {
 
 h1 {
 	font-family: "base02", sans-serif;
+	font-size: 3rem;
+}
+
+@media screen and (max-width: 576px) {
+	h1 {
+		font-size: 2rem;
+	}
 }
 
 header#master-header {
-	background: url("../img/bg/bg-header.png") no-repeat center fixed;
+	background: url("../img/bg/bg-header.jpg") no-repeat center fixed;
 	background-size: cover;
 	color: white;
-}
-
-header#master-header .site-title p:after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	width: 660px;
-	height: 11px;
-	background: url(../img/line-with-arrow.png) 0 0 no-repeat;
-	background-size: auto auto;
-	background-size: 100% 100%;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 header#master-header .navbar-light .navbar-brand, header#master-header .navbar-light .navbar-nav .nav-link {
 	color: white;
 	font-weight: 600;
+}
+
+header#master-header form .row {
+	margin: 0;
+}
+
+section.concept h1 {
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 800;
+	font-size: 3rem;
+	text-transform: uppercase;
+}
+
+section.concept p {
+	font-weight: 600;
+	font-size: 2rem;
+}
+
+section.niveaux {
+	padding-bottom: 3rem;
+}
+
+section.niveaux h2, section.niveaux small {
+	font-weight: 800;
+}
+
+section.niveaux small {
+	font-size: 2rem;
+	position: relative;
+	bottom: -1.2rem;
+}
+
+section.niveaux h2 {
+	font-size: 3.3rem;
+}
+
+section.niveaux img {
+	position: relative;
+	bottom: -4.5rem;
+}
+
+section.niveaux .lvl-img {
+	position: relative;
+}
+
+section.niveaux .lvl-img .griffe {
+	position: absolute;
+	bottom: -5rem;
 }
 
 section.blog .blog-img img:last-child {

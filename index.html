@@ -65,20 +65,20 @@
           <form class="search-form" action="test.html" method="get">
 
             <div class="row">
-              <input class="col-md-2 form-control" placeholder="Entrez un lieu" type="search">
-              <select class="col-md-2 form-control" name="number">
+              <input class="col-md form-control" placeholder="Entrez un lieu" type="search">
+              <select class="col-md form-control" name="number">
                 <option value="" selected="selected">Nombre</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
               </select>
-              <select class="col-md-2 form-control" name="lvl">
+              <select class="col-md form-control" name="lvl">
                 <option value="" selected="selected">Niveau</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
               </select>
-              <select class="col-md-2 form-control" name="theme">
+              <select class="col-md form-control" name="theme">
                 <option value="" selected="selected">Thème</option>
                 <option value="1">Bushcraft</option>
               </select>
@@ -103,35 +103,47 @@
       </div><!-- /container -->
     </header><!-- /master-header -->
 
-    <section class="concept container">
-      <h1 class="text-center">Concept</h1>
-      <p>Bivoik sélectionne pour vous les meilleurs stages de survie. Vous serez amené à traverser des zones enneigées, des déserts, des forêts. Vos priorités seront de préparer un endroit où passer la nuit et de trouver à manger. Avant de partir, il est important de savoir dans quelle catégorie vous vous situez.</p>
-    </section><!-- /concept -->
+    <div class="container-fluid filter-top">
+      <!-- <div class="filter-header container-fluid"></div> -->
+      <section class="concept container">
+        <h1 class="text-center">Concept</h1>
+        <p>Bivoik sélectionne pour vous les meilleurs stages de survie. Vous serez amené à traverser des zones enneigées, des déserts, des forêts. Vos priorités seront de préparer un endroit où passer la nuit et de trouver à manger. Avant de partir, il est important de savoir dans quelle catégorie vous vous situez.</p>
+      </section><!-- /concept -->
+    </div>
 
     <section class="niveaux container">
       <h1 class="text-right">Niveaux</h1>
       <div class="row">
-        <div class="col">
+        <div class="col-12 col-lg-4 decouverte">
           <div class="lvl-title text-center">
+            <div class="lvl-img">
               <img src="dist/img/niveaux/lvl.png" alt="logo-niveau" title="Niveau découverte">
-              <h2><small>niveau</small> découverte</h2>
+              <img class="griffe" src="dist/img/niveaux/griffe-lvl-1.png" alt="griffe-lvl-1">
+            </div>
+              <h2 class="text-left"><small>niveau</small> <p>découverte</p></h2>
           </div>
           <p>C'est votre premier stage de survie, vous n'avez jamais allumé un feu et l'idée de dormir à la belle étoile ne vous a jamais traversé l'esprit jusqu'à maintenant.</p>
-        </div><!-- /découverte -->
-        <div class="col">
+        </div><!-- /decouverte -->
+        <div class="col-12 col-lg-4 confirme">
           <div class="lvl-title text-center">
+            <div class="lvl-img">
               <img src="dist/img/niveaux/lvl.png" alt="logo-niveau" title="Niveau confirmé">
-              <h2><small>niveau</small> confirmé</h2>
+              <img class="griffe" src="dist/img/niveaux/griffe-lvl-2.png" alt="griffe-lvl-2">
+            </div>
+              <h2 class="text-left"><small>niveau</small> <p>confirmé</p></h2>
           </div>
           <p>La survie, vous en avez déjà entendu parlé, peut être même que vous êtes renseigné sur le sujet. Vous êtes un randonneur aguerri et si vous chercher à repousser vos limites, vous êtes au bon endroit.</p>
-        </div><!-- /confirmé -->
-        <div class="col">
+        </div><!-- /confirme -->
+        <div class="col-12 col-lg-4 expert">
           <div class="lvl-title text-center">
+            <div class="lvl-img">
               <img src="dist/img/niveaux/lvl.png" alt="logo-niveau" title="Niveau expert">
-              <h2><small>niveau</small> expert</h2>
+              <img class="griffe" src="dist/img/niveaux/griffe-lvl-3.png" alt="griffe-lvl-3">
+            </div>
+              <h2 class="text-left"><small>niveau</small> <p>expert</p></h2>
           </div>
-          <p>Vous êtes ici par passion, vous connaissez la survie sur le bout des doigts. Pas besoin d'en dire d'avantage, votre sac est déjà prêt.</p><!-- /expert -->
-        </div>
+          <p>Vous êtes ici par passion, vous connaissez la survie sur le bout des doigts. Pas besoin d'en dire d'avantage, votre sac est déjà prêt.</p>
+        </div><!-- /expert -->
       </div>
     </section><!-- /niveau -->
 

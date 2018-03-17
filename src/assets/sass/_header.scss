@@ -1,33 +1,41 @@
 
+
 header#master-header{
-  background: url('../img/bg/bg-header.png') no-repeat center fixed;
+  background: url('../img/bg/bg-header.jpg') no-repeat center fixed;
   background-size: cover;
   color: $color-header;
+  text-align: center;
+  margin-left:auto;
+  margin-right:auto;
 
-  .site-title{
-    p{
-
-        &:after{
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          width: 660px;
-          height: 11px;
-          background: url(../img/line-with-arrow.png) 0 0 no-repeat;
-          background-size: auto auto;
-          background-size: 100% 100%;
-          -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-          -o-transform: translateX(-50%);
-          transform: translateX(-50%);
-        }
-
-    }
-  }
+  // .site-title{
+  //   p{
+  //
+  //       &:after{
+  //         content: '';
+  //         position: absolute;
+  //         bottom: 0;
+  //         left: 50%;
+  //         width: 660px;
+  //         height: 11px;
+  //         background: url(../img/line-with-arrow.png) 0 0 no-repeat;
+  //         background-size: auto auto;
+  //         background-size: 100% 100%;
+  //         -webkit-transform: translateX(-50%);
+  //         -ms-transform: translateX(-50%);
+  //         -o-transform: translateX(-50%);
+  //         transform: translateX(-50%);
+  //       }
+  //
+  //   }
+  // }
 
 .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
     color: $color-header;
     font-weight: 600;
+  }
+
+  form .row{
+    margin: 0;
   }
 }

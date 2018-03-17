@@ -65,6 +65,7 @@ gulp.task('watch', function() {
     }
   });
   gulp.watch([destination + '/css/', source + '/assets/sass/*.scss'], ['css']);
+  gulp.watch([destination + '/css/', source + '/assets/sass/sections/*.scss'], ['css']);
   gulp.watch(source + '/assets/js/*.js', ['javascript']);
   gulp.watch(source + '/assets/img/*.{png,jpg,gif}', ['img']);
   gulp.watch('./*.html').on('change', browserSync.reload);
