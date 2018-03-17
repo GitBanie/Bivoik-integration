@@ -1,0 +1,23 @@
+section.themes{
+  figure{
+    position: relative;
+    figcaption{
+      position: absolute;
+      bottom: 0.5rem;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      text-align: center;
+      font-weight: 600;
+      font-size: 2rem;
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media screen and (max-width: 576px) {
+        font-size: 1rem;
+      }
+    }
+  }
+
+}

@@ -11119,9 +11119,9 @@ h1 {
 	font-size: 3rem;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 991px) {
 	h1 {
-		font-size: 2rem;
+		text-align: center;
 	}
 }
 
@@ -11157,6 +11157,17 @@ section.concept p {
 
 section.niveaux {
 	padding-bottom: 3rem;
+	padding-top: 3rem;
+}
+
+section.niveaux h1 {
+	text-align: right;
+}
+
+@media screen and (max-width: 991px) {
+	section.niveaux h1 {
+		text-align: center;
+	}
 }
 
 section.niveaux h2, section.niveaux small {
@@ -11171,6 +11182,7 @@ section.niveaux small {
 
 section.niveaux h2 {
 	font-size: 3.3rem;
+	text-align: left;
 }
 
 section.niveaux img {
@@ -11185,6 +11197,47 @@ section.niveaux .lvl-img {
 section.niveaux .lvl-img .griffe {
 	position: absolute;
 	bottom: -5rem;
+}
+
+section.themes figure {
+	position: relative;
+}
+
+section.themes figure figcaption {
+	position: absolute;
+	bottom: 0.5rem;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	text-align: center;
+	font-weight: 600;
+	font-size: 2rem;
+	height: 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+@media screen and (max-width: 576px) {
+	section.themes figure figcaption {
+		font-size: 1rem;
+	}
+}
+
+section.top-stages h1 {
+	text-align: right;
+}
+
+@media screen and (max-width: 991px) {
+	section.top-stages h1 {
+		text-align: center;
+	}
 }
 
 section.blog .blog-img img:last-child {
