@@ -11105,6 +11105,11 @@ a.text-dark:hover, a.text-dark:focus {
 	background-color: #e9511f;
 }
 
+article.card {
+	margin: 2rem;
+	border: 1px solid black !important;
+}
+
 .search input:focus, .search select:focus {
 	-webkit-box-shadow: none;
 	        box-shadow: none;
@@ -11201,6 +11206,7 @@ section.niveaux .lvl-img .griffe {
 
 section.themes figure {
 	position: relative;
+	margin: 0 -0.8rem 1rem;
 }
 
 section.themes figure figcaption {
@@ -11216,12 +11222,20 @@ section.themes figure figcaption {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-webkit-box-pack: space-evenly;
+	    -ms-flex-pack: space-evenly;
+	        justify-content: space-evenly;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+}
+
+section.themes figure figcaption img {
+	height: 50%;
+}
+
+section.themes figure figcaption p {
+	margin: inherit;
 }
 
 @media screen and (max-width: 576px) {

@@ -1,6 +1,7 @@
 section.themes{
   figure{
     position: relative;
+    margin: 0 -0.8rem 1rem;
     figcaption{
       position: absolute;
       bottom: 0.5rem;
@@ -12,8 +13,14 @@ section.themes{
       font-size: 2rem;
       height: 50%;
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
+      img{
+        height: 50%;
+      }
+      p{
+        margin: inherit;
+      }
       @media screen and (max-width: 576px) {
         font-size: 1rem;
       }
