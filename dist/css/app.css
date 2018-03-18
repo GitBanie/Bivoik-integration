@@ -11388,9 +11388,18 @@ section.top-stages .top-stages-title {
 	}
 }
 
-section.blog .blog-img img:last-child {
-	border: solid black 5px;
-	position: relative;
+section.blog article {
+	padding-top: 1rem;
+}
+
+section.blog article h1 {
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+section.blog article .link {
+	text-align: center;
 }
 
 .bg-feu {

@@ -1,15 +1,14 @@
 section.blog{
 
-  .blog-img{
-    img{
-      &:last-child{
-        border: solid black 5px;
-        position: relative;
-        // top: -15%;
-        // left: -48%;
-      }
+  article{
+    padding-top: 1rem;
+    h1{
+      font-family: $font-main;
+      font-weight: 700;
+      font-size: 2rem
     }
-
+    .link{
+      text-align: center;
+    }
   }
-
 }
