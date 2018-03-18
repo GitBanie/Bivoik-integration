@@ -11421,4 +11421,41 @@ footer#master-footer {
 	background-color: #201004;
 }
 
+footer#master-footer nav ul li a {
+	color: white;
+}
+
+footer#master-footer .bivoik-logo, footer#master-footer .yakaygo-logo {
+	text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+	footer#master-footer .bivoik, footer#master-footer .yakaygo {
+		text-align: center;
+	}
+}
+
+footer#master-footer .by {
+	color: #c6c6c6;
+	font-weight: 700;
+	font-size: 1.8rem;
+	text-align: center;
+	display: none;
+}
+
+@media screen and (min-width: 767px) {
+	footer#master-footer .by {
+		display: block;
+	}
+}
+
+footer#master-footer .reseaux ul {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
 /*# sourceMappingURL=app.css.map */

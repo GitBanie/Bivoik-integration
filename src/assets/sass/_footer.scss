@@ -15,7 +15,34 @@
 footer#master-footer{
   background-color: $color-bg-footer;
 
+  nav ul li a{
+    color: white;
+  }
 
+  .bivoik-logo, .yakaygo-logo{
+    text-align: center;
+    // text-align: end;
+  }
+  .bivoik, .yakaygo{
+    @media screen and (min-width: 576px) {
+      text-align: center;
+    }
+  }
+
+  .by{
+    color: #c6c6c6;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-align: center;
+    display: none;
+    @media screen and (min-width: 767px) {
+      display: block;
+    }
+  }
+  .reseaux ul{
+    display: flex;
+    justify-content: space-between;
+  }
 
 
 
