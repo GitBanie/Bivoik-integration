@@ -3,6 +3,10 @@ body{
   font-family: $font-main;
 }
 
+li{
+  list-style: none;
+}
+
 //Title
 h1{
   font-family: $font-title;

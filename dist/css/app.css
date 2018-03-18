@@ -11106,8 +11106,136 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 article.card {
-	margin: 2rem;
-	border: 1px solid black !important;
+	border: 2px solid #e9511f !important;
+	border-top-left-radius: 0.6rem;
+	border-top-right-radius: 0.6rem;
+}
+
+article.card h1 {
+	font-family: "Nunito Sans", sans-serif;
+	font-size: 1.55rem;
+	color: #e9511f;
+	font-weight: 800;
+}
+
+article.card a:hover {
+	text-decoration: none;
+}
+
+article.card .card-survivant {
+	position: absolute;
+	left: 1rem;
+	bottom: -1rem;
+}
+
+article.card .card-survivant figure {
+	position: relative;
+}
+
+article.card .card-survivant figure img {
+	border-radius: 50%;
+	border: 2px solid white;
+	width: 100px;
+	height: 100px;
+}
+
+article.card .card-survivant figure figcaption {
+	position: absolute;
+	bottom: 2.5rem;
+	color: white;
+	font-weight: 700;
+	left: 6.5rem;
+}
+
+article.card .rating {
+	color: #e9511f;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+@media screen and (max-width: 991px) {
+	article.card .rating {
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+}
+
+article.card .rating ul {
+	display: contents;
+}
+
+article.card .rating span {
+	margin-left: 1rem;
+}
+
+article.card .card-img {
+	position: relative;
+}
+
+article.card .card-img .description-card-top {
+	position: absolute;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-top-left-radius: 0.4rem;
+	border-top-right-radius: 0.4rem;
+	color: white;
+	font-weight: 700;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	width: 100%;
+}
+
+article.card .card-img .description-card-top span {
+	display: block;
+}
+
+article.card .card-img .description-card-top .description-card-top-category {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: baseline;
+	    -ms-flex-pack: baseline;
+	        justify-content: baseline;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+}
+
+article.card .card-img .description-card-top .price-per-person {
+	margin-right: 1rem;
+}
+
+article.card .card-img .description-card-top .price-per-person .price {
+	font-size: 2rem;
+}
+
+article.card .card-img .description-card-top .price-per-person .person {
+	margin-top: -0.6rem;
+}
+
+article.card .card-text {
+	padding-top: 1rem;
+	color: #737373;
+}
+
+article.card .card-footer {
+	background-color: #e9511f;
+	text-align: center;
+}
+
+article.card .card-footer small {
+	color: white;
+	font-weight: 700;
+	font-size: 1rem;
 }
 
 .search input:focus, .search select:focus {
@@ -11117,6 +11245,10 @@ article.card {
 
 body {
 	font-family: "Nunito Sans", sans-serif;
+}
+
+li {
+	list-style: none;
 }
 
 h1 {
@@ -11244,12 +11376,14 @@ section.themes figure figcaption p {
 	}
 }
 
-section.top-stages h1 {
+section.top-stages .top-stages-title {
 	text-align: right;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
 @media screen and (max-width: 991px) {
-	section.top-stages h1 {
+	section.top-stages .top-stages-title {
 		text-align: center;
 	}
 }
