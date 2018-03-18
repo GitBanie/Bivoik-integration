@@ -7,35 +7,76 @@ header#master-header{
   text-align: center;
   margin-left:auto;
   margin-right:auto;
+  position: relative;
 
-  // .site-title{
-  //   p{
-  //
-  //       &:after{
-  //         content: '';
-  //         position: absolute;
-  //         bottom: 0;
-  //         left: 50%;
-  //         width: 660px;
-  //         height: 11px;
-  //         background: url(../img/line-with-arrow.png) 0 0 no-repeat;
-  //         background-size: auto auto;
-  //         background-size: 100% 100%;
-  //         -webkit-transform: translateX(-50%);
-  //         -ms-transform: translateX(-50%);
-  //         -o-transform: translateX(-50%);
-  //         transform: translateX(-50%);
-  //       }
-  //
-  //   }
-  // }
+  .header-logo {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .by-Yakaygo{
+    margin-top: -1rem;
+    img, span{
+      height: 1rem;
+    }
+  }
+
+  .mainNav{
+    justify-content: center;
+  }
+
+  #navbarNav{
+    border-bottom: 2px solid #ebc78f;
+    @media screen and (max-width: 991px) {
+      border: 0;
+    }
+    ul li{
+      margin-right: 1rem;
+      margin-left: 1rem;
+      text-transform: uppercase;
+    }
+  }
 
 .navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
     color: $color-header;
     font-weight: 600;
   }
 
+  .site-title{
+    margin-bottom: 4rem;
+    h1{
+      font-family: $font-main;
+      font-weight: 800;
+    }
+    p{
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+    .animate-arrow{
+      display: none;
+      @media screen and (min-width: 991px) {
+        display: inline;
+        width: 70%;
+      }
+    }
+  }
+
   form .row{
     margin: 0;
   }
+
+  .search{
+    padding-bottom: 3rem;
+    .info{
+      font-weight: 700;
+      padding-top: 3rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .navbar-light .navbar-toggler {
+    color: white;
+    border: 0;
+  }
+
 }

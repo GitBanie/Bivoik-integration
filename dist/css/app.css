@@ -11238,13 +11238,39 @@ article.card .card-footer small {
 	font-size: 1rem;
 }
 
-.search input:focus, .search select:focus {
-	-webkit-box-shadow: none;
-	        box-shadow: none;
+.i-group {
+	position: relative;
+	padding: 0;
+}
+
+.i-group input, .i-group select {
+	padding-left: 40px;
+}
+
+.i-group select {
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+	cursor: pointer;
+}
+
+.i-group .i {
+	position: absolute;
+	left: 7%;
+	top: 20%;
+	color: #636561;
+}
+
+.i-group .angle-down {
+	position: absolute;
+	right: 7%;
+	top: 20%;
+	color: #636561;
 }
 
 body {
 	font-family: "Nunito Sans", sans-serif;
+	overflow-x: hidden;
 }
 
 li {
@@ -11269,6 +11295,47 @@ header#master-header {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
+}
+
+header#master-header .header-logo {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+header#master-header .by-Yakaygo {
+	margin-top: -1rem;
+}
+
+header#master-header .by-Yakaygo img, header#master-header .by-Yakaygo span {
+	height: 1rem;
+}
+
+header#master-header .mainNav {
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+header#master-header #navbarNav {
+	border-bottom: 2px solid #ebc78f;
+}
+
+@media screen and (max-width: 991px) {
+	header#master-header #navbarNav {
+		border: 0;
+	}
+}
+
+header#master-header #navbarNav ul li {
+	margin-right: 1rem;
+	margin-left: 1rem;
+	text-transform: uppercase;
 }
 
 header#master-header .navbar-light .navbar-brand, header#master-header .navbar-light .navbar-nav .nav-link {
@@ -11276,8 +11343,48 @@ header#master-header .navbar-light .navbar-brand, header#master-header .navbar-l
 	font-weight: 600;
 }
 
+header#master-header .site-title {
+	margin-bottom: 4rem;
+}
+
+header#master-header .site-title h1 {
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 800;
+}
+
+header#master-header .site-title p {
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+
+header#master-header .site-title .animate-arrow {
+	display: none;
+}
+
+@media screen and (min-width: 991px) {
+	header#master-header .site-title .animate-arrow {
+		display: inline;
+		width: 70%;
+	}
+}
+
 header#master-header form .row {
 	margin: 0;
+}
+
+header#master-header .search {
+	padding-bottom: 3rem;
+}
+
+header#master-header .search .info {
+	font-weight: 700;
+	padding-top: 3rem;
+	text-transform: uppercase;
+}
+
+header#master-header .navbar-light .navbar-toggler {
+	color: white;
+	border: 0;
 }
 
 section.concept h1 {
@@ -11285,6 +11392,8 @@ section.concept h1 {
 	font-weight: 800;
 	font-size: 3rem;
 	text-transform: uppercase;
+	padding-top: 3rem;
+	padding-bottom: 2rem;
 }
 
 section.concept p {

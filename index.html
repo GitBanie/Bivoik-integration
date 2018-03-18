@@ -20,11 +20,19 @@
 
           <!-- navigation -->
           <nav class="site-navigation navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="#">Bivoiak</a>
+            <a class="navbar-brand" href="#">
+              <div class="header-logo">
+                <img src="dist/img/logos/bivoik.svg" alt="logo bivoik">
+                <div class="by-Yakaygo">
+                  <span>by</span>
+                  <img src="dist/img/logos/yakaygo.svg" alt="logo yakaygo">
+                </div>
+              </div>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse mainNav" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
                   <a class="nav-link" href="#">Accueil <span class="sr-only">(current)</span></a>
@@ -59,57 +67,88 @@
         <div class="site-title">
           <h1>Reveillez votre instinct de survie</h1>
           <p>Réservez votre stage sélectionné par YAKAYGO, l'expert des activités de plein air</p>
+          <img class="animate-arrow" src="dist/img/bg/line-with-arrow.png" alt="fleche de separation">
         </div>
 
         <div class="search">
           <form class="search-form" action="test.html" method="get">
 
             <div class="row">
-              <input class="col-md form-control" placeholder="Entrez un lieu" type="search">
-              <select class="col-md form-control" name="number">
-                <option value="" selected="selected">Nombre</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
-              <select class="col-md form-control" name="lvl">
-                <option value="" selected="selected">Niveau</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-              </select>
-              <select class="col-md form-control" name="theme">
-                <option value="" selected="selected">Thème</option>
-                <option value="1">Bushcraft</option>
-              </select>
+              <div class="col-md i-group">
+                <input class="form-control" placeholder="Entrez un lieu" type="search">
+                <div class="i">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+              </div>
+              <div class="col-md i-group">
+                <select class="form-control" name="number">
+                  <option value="" selected="selected">Nombre</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+                <div class="i">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="angle-down">
+                  <i class="fas fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="col-md i-group">
+                <select class="form-control" name="lvl">
+                  <option value="" selected="selected">Niveau</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+                <div class="i">
+                  <i class="fas fa-signal"></i>
+                </div>
+                <div class="angle-down">
+                  <i class="fas fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="col-md i-group">
+                <select class="form-control" name="theme">
+                  <option value="" selected="selected">Thème</option>
+                  <option value="1">Bushcraft</option>
+                </select>
+                <div class="i">
+                  <i class="fas fa-tag"></i>
+                </div>
+                <div class="angle-down">
+                  <i class="fas fa-angle-down"></i>
+                </div>
+              </div>
               <button type="submit" class="col-md-2 btn btn-danger">
-                <i class="fas fa-search"></i> Survivre
+                <i class="fas fa-search"></i> <span>Chercher</span>
               </button>
 
             </div><!-- row -->
 
-            <div class="row">
-              <i class="col fab fa-npm"></i>
-              <i class="col fab fa-npm"></i>
-              <i class="col fab fa-npm"></i>
-              <i class="col fab fa-npm"></i>
-              <i class="col fab fa-npm"></i>
-              <i class="col fab fa-npm"></i>
-              <i class="col fab fa-npm"></i>
-              <i class="col fab fa-npm"></i>
+            <div class="row info">
+              <div class="col">
+                <img src="dist/img/pictos/expert.svg" alt="logo expert">
+                <p>Des experts de la survie</p>
+              </div>
+              <div class="col">
+                <img src="dist/img/pictos/couteau-suisse.svg" alt="logo expert">
+                <p>Des thématiques spécifiques</p>
+              </div>
+              <div class="col">
+                <img src="dist/img/pictos/cadeau.svg" alt="logo expert">
+                <p>Offrez nos stages</p>
+              </div>
             </div>
           </form>
         </div><!-- /search -->
       </div><!-- /container -->
     </header><!-- /master-header -->
 
-    <!-- <div class="container-fluid filter-top"> -->
-      <!-- <div class="filter-header container-fluid"></div> -->
-      <section class="concept container">
+    <section class="concept container">
         <h1 class="text-center">Concept</h1>
         <p>Bivoik sélectionne pour vous les meilleurs stages de survie. Vous serez amené à traverser des zones enneigées, des déserts, des forêts. Vos priorités seront de préparer un endroit où passer la nuit et de trouver à manger. Avant de partir, il est important de savoir dans quelle catégorie vous vous situez.</p>
       </section><!-- /concept -->
-    <!-- </div> -->
 
     <section class="niveaux container">
       <h1>Niveaux</h1>
