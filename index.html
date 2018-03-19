@@ -75,7 +75,7 @@
 
             <div class="row">
               <div class="col-md i-group">
-                <input class="form-control" placeholder="Entrez un lieu" type="search">
+                <input class="form-control" placeholder="Entrez un lieu" type="search" name="place">
                 <div class="i">
                   <i class="fas fa-map-marker-alt"></i>
                 </div>
@@ -86,6 +86,9 @@
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
                 </select>
                 <div class="i">
                   <i class="fas fa-users"></i>
@@ -97,9 +100,9 @@
               <div class="col-md i-group">
                 <select class="form-control" name="lvl">
                   <option value="" selected="selected">Niveau</option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
+                  <option value="debutant">Débutant</option>
+                  <option value="confirme">Confirmé</option>
+                  <option value="expert">Expert</option>
                 </select>
                 <div class="i">
                   <i class="fas fa-signal"></i>
@@ -111,7 +114,14 @@
               <div class="col-md i-group">
                 <select class="form-control" name="theme">
                   <option value="" selected="selected">Thème</option>
-                  <option value="1">Bushcraft</option>
+                  <option value="bushcraft">Bushcraft</option>
+                  <option value="peche">Pêche ceuillete</option>
+                  <option value="decouverte">Journée découverte</option>
+                  <option value="nature">Intensif nature</option>
+                  <option value="urbain">Intensif urbain</option>
+                  <option value="froid">Grand froid</option>
+                  <option value="jungle">Jungle</option>
+                  <option value="desert">Desert</option>
                 </select>
                 <div class="i">
                   <i class="fas fa-tag"></i>
@@ -198,17 +208,23 @@
                 <img src="dist/img/pictos/bushcraft.svg"/>
                 <p>Bushcraft</p>
               </figcaption>
+              <div class="show">
+                <a href="" class="btn btn-danger">Voir plus</a>
+              </div>
             </figure>
           </a>
         </div>
         <div class="col-6 col-lg">
           <a href="">
             <figure class="figure">
-              <img src="dist/img/themes/peche.png" class="figure-img img-fluid" alt="Pèche Ceuillette">
+              <img src="dist/img/themes/peche.png" class="figure-img img-fluid" alt="Pêche Ceuillette">
               <figcaption class="figure-caption">
                 <img src="dist/img/pictos/peche.svg"/>
-                <p>Pèche Ceuillette</p>
+                <p>Pêche Ceuillette</p>
               </figcaption>
+              <div class="show">
+                <a href="" class="btn btn-danger">Voir plus</a>
+              </div>
             </figure>
           </a>
         </div>
@@ -220,6 +236,9 @@
                 <img src="dist/img/pictos/boussole.svg"/>
                 <p>Journée découverte</p>
               </figcaption>
+              <div class="show">
+                <a href="" class="btn btn-danger">Voir plus</a>
+              </div>
             </figure>
           </a>
         </div>
@@ -231,6 +250,9 @@
                 <img src="dist/img/pictos/hachette.svg"/>
                 <p>Intensif nature</p>
               </figcaption>
+              <div class="show">
+                <a href="" class="btn btn-danger">Voir plus</a>
+              </div>
             </figure>
           </a>
         </div>
@@ -245,6 +267,9 @@
                 <img src="dist/img/pictos/urbain.svg"/>
                 <p>Intensif urbain</p>
               </figcaption>
+              <div class="show">
+                <a href="" class="btn btn-danger">Voir plus</a>
+              </div>
             </figure>
           </a>
         </div>
@@ -256,6 +281,9 @@
                 <img src="dist/img/pictos/feux.svg"/>
                 <p>Grand froid</p>
               </figcaption>
+              <div class="show">
+                <a href="" class="btn btn-danger">Voir plus</a>
+              </div>
             </figure>
           </a>
         </div>
@@ -267,6 +295,9 @@
                 <img src="dist/img/pictos/couteau.svg"/>
                 <p>Jungle</p>
               </figcaption>
+              <div class="show">
+                <a href="" class="btn btn-danger">Voir plus</a>
+              </div>
             </figure>
           </a>
         </div>
@@ -278,6 +309,9 @@
                 <img src="dist/img/pictos/gourde.svg"/>
                 <p>Desert</p>
               </figcaption>
+              <div class="show">
+                <a href="" class="btn btn-danger">Voir plus</a>
+              </div>
             </figure>
           </a>
         </div>
@@ -520,14 +554,23 @@
           </div>
         </div>
         <div class="blog-img col-12 order-1 col-md order-md-12">
-          <img src="dist/img/blog/img-blog.png" alt="Stagiaire essayant de rendre son abri imperméable" title="Stagiaire essayant de rendre son abri imperméable" class="img-fluid">
-          <!-- <img src="dist/img/blog/img-blog-2.png" alt="Construire son abris" title="Construire son abris" class="img-fluid"> -->
+          <a href="">
+            <img src="dist/img/blog/img-blog.png" alt="Stagiaire essayant de rendre son abri imperméable" title="Stagiaire essayant de rendre son abri imperméable" class="img-fluid">
+            <!-- <img src="dist/img/blog/img-blog-2.png" alt="Construire son abris" title="Construire son abris" class="img-fluid"> -->
+          </a>
         </div>
       </article>
     </section><!-- /blog -->
 
     <div class="bg-feu">
       <div class="filter-footer container-fluid"></div>
+
+      <!-- ancre haut de page -->
+      <div class="cRetour">
+        <a href="#" title="Retour haut de page">
+          <i class="fas fa-caret-square-up"></i>
+        </a>
+      </div>
 
     </div>
 

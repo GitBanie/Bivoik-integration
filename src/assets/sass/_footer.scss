@@ -42,6 +42,10 @@ footer#master-footer{
   .reseaux ul{
     display: flex;
     justify-content: space-between;
+    font-size: 1.5rem;
+    a:hover{
+      color: $color-bg-btn-danger;
+    }
   }
 
 

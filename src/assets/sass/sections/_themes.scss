@@ -2,6 +2,14 @@ section.themes{
   figure{
     position: relative;
     margin: 0 -0.8rem 1rem;
+    filter: grayscale(0);
+    transition: 0s ease-in-out;
+    &:hover{
+      filter: grayscale(100%);
+    }
+    .btn-danger:hover {
+      background-color: #636162;
+    }
     figcaption{
       position: absolute;
       bottom: 0.5rem;
@@ -23,6 +31,16 @@ section.themes{
       }
       @media screen and (max-width: 576px) {
         font-size: 1rem;
+      }
+    }
+    .show{
+      display: none;
+      position: absolute;
+      top: 40%;
+      right: 33%;
+      @media screen and (max-width: 445px) {
+        top: 35%;
+        right: 25%;
       }
     }
   }
