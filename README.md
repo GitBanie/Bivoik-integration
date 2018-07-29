@@ -2,4 +2,4 @@
 
 https://bivoik.netlify.com
 
-Refonte du site internet [YAKAYGO](https://www.yakaygo.com/fr/)
+Groupe [YAKAYGO](https://www.yakaygo.com/fr/)
